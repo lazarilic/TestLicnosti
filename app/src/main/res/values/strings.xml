@@ -61,7 +61,14 @@
     Povremeno ste skloni da prekršite poneko pravilo da biste dobili ono što želite.</string>
     <string name="honesty_humility_low">Skloni ste kršenju pravila, ukoliko vam to može obezbediti određene
     prednosti. Smatrate da su društveni status i materijalna dobit značajni pokazatelji uspeha.</string>
+    <string name="zapocni_test">Započni test</string>
 
+    <string name="default_spinner_item">Izaberi</string>
+    <string name="godine_label">Godine:</string>
+    <string name="pol_label">Pol</string>
+    <string name="obrazovanje_label">Obrazovanje</string>
+    <string name="terms_and_conditions">Uslove korišćenja</string>
+    <string name="prihvatam_label">prihvatam</string>
     <string-array name="education_array">
         <item>Izaberi</item>
         <item>Osnovna skola</item>

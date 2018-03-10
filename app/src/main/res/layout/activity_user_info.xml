@@ -10,8 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#ffffff"
-    android:layout_marginTop="20dp"
+    android:background="@color/textColor"
     android:padding="16dp"
     tools:context="com.example.lazar.testlicnosti.activities.QuestionActivity">
 
@@ -25,7 +24,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:layout_marginBottom="16dp">
 
@@ -33,7 +32,7 @@
                 android:id="@+id/ageTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Godine: "
+                android:text="@string/godine_label"
                 android:layout_gravity="bottom"
                 android:textSize="20sp"
                 android:layout_marginEnd="16dp"/>
@@ -44,14 +43,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:ems="10"
-                android:inputType="number"
-                android:backgroundTint="@color/colorDivider"/>
+                android:inputType="number"/>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimary"
             android:layout_marginBottom="16dp"/>
 
         <LinearLayout
@@ -62,7 +60,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pol"
+                android:text="@string/pol_label"
                 android:textSize="20sp"
                 android:layout_marginBottom="8dp"/>
 
@@ -91,7 +89,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimary"
             android:layout_marginBottom="20dp"/>
 
         <LinearLayout
@@ -101,16 +99,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Obrazovanje"
+                android:text="@string/obrazovanje_label"
                 android:textSize="20sp"/>
 
             <Spinner
                 android:id="@+id/spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/education_array"
-                android:padding="8dp"/>
-
+                android:entries="@array/education_array"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -119,7 +115,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp">
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,23 +124,32 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/prihvatam_label"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/termsAndConditionsTextView"
-            android:text="Terms and Conditions"
-            android:textSize="16sp"/>
+            android:text="@string/terms_and_conditions"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="50dp">
+        android:layout_gravity="bottom">
+
         <Button
+            android:id="@+id/buttonNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/buttonNext"
-            android:text="Zapocni test"
-            android:textSize="12sp"
-            android:layout_gravity="bottom"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            android:text="@string/zapocni_test"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </LinearLayout>
