@@ -10,13 +10,12 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 /**
- * Created by Lazar on 3/5/18.
+ * Adapter class for education spinner
  */
-
 public class SpinnerAdapter extends ArrayAdapter<String> {
 
-    Context context;
-    String[] values;
+    private Context context;
+    private String[] values;
 
     public SpinnerAdapter(@NonNull Context context, int textViewResourceId, String[] values) {
         super(context, textViewResourceId, values);
@@ -47,10 +46,7 @@ public class SpinnerAdapter extends ArrayAdapter<String> {
 
     @Override
     public boolean isEnabled(int position) {
-        if (position == 0) {
-            return false;
-        }
-        return true;
+        return position != 0;
     }
 
     @NonNull
@@ -59,12 +55,8 @@ public class SpinnerAdapter extends ArrayAdapter<String> {
         TextView label = new TextView(context);
         label.setBackgroundColor(Color.WHITE);
         label.setTextColor(Color.BLACK);
-        label.setPadding(16, 0, 16, 0);
-        // Then you can get the current item using the values array (Users array) and the current position
-        // You can NOW reference each method you has created in your bean object (User class)
         label.setText(values[position]);
 
-        // And finally return your dynamic (or custom) view for each spinner item
         return label;
     }
 
@@ -79,6 +71,7 @@ public class SpinnerAdapter extends ArrayAdapter<String> {
         }
 
         label.setText(values[position]);
+        label.setPadding(16, 16, 16, 16);
 
         return label;
     }

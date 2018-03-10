@@ -122,16 +122,9 @@ public class UserInfoActivity extends AppCompatActivity implements AdapterView.O
     }
 
     private void createEducationAdapter() {
-//        ArrayAdapter<CharSequence> educationArray = ArrayAdapter.createFromResource(this,
-//                R.array.education_array, android.R.layout.simple_spinner_item);
-//        educationArray.setDropDownViewResource(
-//                android.R.layout.simple_spinner_dropdown_item);
-//        spinner.setAdapter(educationArray);
         String[] array = getResources().getStringArray(R.array.education_array);
-        adapter = new SpinnerAdapter(getApplicationContext(), android.R.layout.simple_spinner_item,
-                array);
+        adapter = new SpinnerAdapter(this, R.layout.default_spinner, array);
         spinner.setAdapter(adapter);
-
     }
 
     @Override
@@ -145,7 +138,7 @@ public class UserInfoActivity extends AppCompatActivity implements AdapterView.O
     }
 
     private void validateForm() {
-        String defaultSpinnerText = "Izaberi";
+        String defaultSpinnerText = this.getResources().getString(R.string.default_spinner_item);
         if (!age.getText().toString().equalsIgnoreCase("") && termsCheckBox.isChecked()
                 && !spinner.getSelectedItem().equals(defaultSpinnerText)) {
             nextButton.setEnabled(true);
@@ -153,5 +146,3 @@ public class UserInfoActivity extends AppCompatActivity implements AdapterView.O
 
     }
 }
-
-
