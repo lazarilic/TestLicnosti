@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_marginTop="20dp"
+    android:padding="16dp"
+    tools:context="com.example.lazar.testlicnosti.activities.QuestionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Godine: "
+                android:layout_gravity="bottom"
+                android:textSize="20sp"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:inputType="number"
+                android:backgroundTint="@color/colorDivider"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pol"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rGroup"
+                android:orientation="vertical"
+                android:checkedButton="@id/femaleRadioButton">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pol_muski" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pol_zenski" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obrazovanje"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/education_array"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/termsAndConditionsCheckbox"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/termsAndConditionsTextView"
+            android:text="Terms and Conditions"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNext"
+            android:text="Zapocni test"
+            android:textSize="12sp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

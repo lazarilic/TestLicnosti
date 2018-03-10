@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor"
+    android:orientation="vertical"
+    tools:context="com.example.lazar.testlicnosti.activities.TermsAndConditionsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorDivider" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="Last updated: 17.01.2018."
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="Please read these Terms and Conditions carefully before using the http://www.octopus.com website and the Octopus App mobile application operated by Carnegie Technologies."
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

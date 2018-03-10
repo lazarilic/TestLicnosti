@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.lazar.testlicnosti.activities.QuestionActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="3dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/cambo"
+            android:hint="@string/app_name"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/textColor"
+            android:textSize="23sp"
+            android:animateLayoutChanges="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cambo"
+            android:text="@string/potpuno_se_slazem"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="?attr/selectableItemBackground"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/slazem_se"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cambo"
+            android:id="@+id/button4"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/nisam_siguran"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/button3"
+            android:fontFamily="@font/cambo"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/ne_slazem_se"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/button2"
+            android:fontFamily="@font/cambo"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/potpuno_se_ne_slazem"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/cambo"
+            android:id="@+id/button1"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</LinearLayout>

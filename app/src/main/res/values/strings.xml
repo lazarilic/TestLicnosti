@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Test Licnosti</string>
+    <string name="entered_question_is">Upisano pitanje br: </string>
+    <string name="potpuno_se_ne_slazem">Potpuno se ne slazem</string>
+    <string name="ne_slazem_se">Ne slazem se</string>
+    <string name="nisam_siguran">Nisam siguran/na</string>
+    <string name="slazem_se">Slazem se</string>
+    <string name="potpuno_se_slazem">Potpuno se slazem</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+
+    <string name="honesty_humility">Honesty-Humility</string>
+    <string name="emotionality">Emotionality</string>
+    <string name="extraversion">Extraversion</string>
+    <string name="agreeableness">Agreeableness</string>
+    <string name="conscientiousness">Conscientiousness</string>
+    <string name="openness_to_experience">Openness to experience</string>
+
+    <string name="pol_muski">Muški</string>
+    <string name="pol_zenski">Ženski</string>
+
+    <string name="emotionality_high">Osetljiv, emotivan i sklon osećanjima koja mogu da budu
+    uznemirujuća. Imate potrebu da osetite emocionalnu podršku od strane drugih ljudi. Skloni ste
+    stvaranju empatičnih i sentimentalnih odnosa sa drugima.</string>
+    <string name="emotionality_medium">Uglavnom ste smireni i sposobni da se nosite sa stresom, ali
+    nekada osećate krivicu, bes ili tugu.</string>
+    <string name="emotionality_low">Sigurni ste, otporni i uglavnom opušteni čak i u stresogenim
+    okolnostima. Ne osećate jaku potrebu da podelite svoje brige sa drugim ljudima.</string>
+
+    <string name="extraversion_high">Ekstrovertni ste, volite da izlazite, aktivne ste i energični.
+    Većinu vremena volite da budete okruženi ljudima. Uživate u društveni događanjima.</string>
+    <string name="extraversion_medium">Umereno ste aktivni i entuzijastični. Uživate u društvu,
+    ali takođe smatrate da je privatnost bitna.</string>
+    <string name="extraversion_low">Introvertni ste, povučeni i ozbiljni. Više volite da budete
+    sami ili sa nekoliko bliskih prijatelja.</string>
+
+    <string name="openness_high">Otvoreni ste za nova iskustva. Zanimaju vas neobične ideje i ljudi.
+    Imate širok spektar interesovanja i veoma ste maštoviti.</string>
+    <string name="openness_medium">Više ste okrenuti praktičnim stvarima, ali ste spremni da
+    prihvatite nove stvari. Tražite balans između starog i novog.</string>
+    <string name="openness_low">Prizemni ste, okrenuti praktičnim stvarima,tradicionalni i radite
+    stvari po ustaljenim navikama.</string>
+
+    <string name="agreeableness_high">Saosećajni ste, dobronamerni i voljni da sarađujete i
+    izbegavate konflikte.</string>
+    <string name="agreeableness_medium">Uglavnom ste topli, poverljivi i saradljivi, ali nekada možete da
+    budete tvrdoglavi i kompetitivni.</string>
+    <string name="agreeableness_low">Tvrdoglavi ste, skeptični, ponosni i kompetitivni. Imate
+    običaj da direktno iskazujete svoj bes.</string>
+
+    <string name="conscientiuousness_high">Savesni ste i dobro organizovani. Imate visoke standarde i uvek
+    težite ispunjenju svojih ciljeva. Cenite tačnost i preciznost kako kod sebe, tako i kod drugih ljudi.</string>
+    <string name="conscientiuousness_medium">Ljudi se mogu osloniti na Vas i niste loše organizovani.
+    Uglavnom imate jasne ciljeve, ali ste spremni da stavite posao u drugi plan.</string>
+    <string name="conscientiuousness_low">Opušteni ste, niste veoma dobro organizovani i ponekad
+    se ponašate bezobzirno. Više volite da ne pravite nikakve planove.</string>
+
+    <string name="honesty_humility_high">Skromni ste. Veliko materijalno bogatstvo i luksuz vas ne privlače.
+    Niste skloni iskorišćavanju i manipulisanju drugim ljudima.</string>
+    <string name="honesty_humility_medium">Umereno ste skromni, međutim takođe smatrate da su društevni
+    status i materijalna dobit bitni. Uglavnom se pošteno odnosite prema drugim ljudima.
+    Povremeno ste skloni da prekršite poneko pravilo da biste dobili ono što želite.</string>
+    <string name="honesty_humility_low">Skloni ste kršenju pravila, ukoliko vam to može obezbediti određene
+    prednosti. Smatrate da su društveni status i materijalna dobit značajni pokazatelji uspeha.</string>
+
+    <string-array name="education_array">
+        <item>Izaberi</item>
+        <item>Osnovna skola</item>
+        <item>Srednja skola</item>
+        <item>Fakultet</item>
+        <item>Master studije</item>
+        <item>Doktorske studije</item>
+    </string-array>
+
+</resources>
