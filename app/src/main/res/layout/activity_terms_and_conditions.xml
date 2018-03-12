@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Terms and conditions"
+            android:text="@string/terms_and_co_title"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -29,7 +29,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        android:layout_weight="5">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,10 +49,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:text="Please read these Terms and Conditions carefully before using the http://www.octopus.com website and the Octopus App mobile application operated by Carnegie Technologies."
+                android:text="Please read these Terms and Conditions carefully before using the..."
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
 
         </LinearLayout>
+
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/acceptButton"
+            android:textColor="@color/textColor"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="16dp"
+            android:text="Prihvatam uslove koriscenja"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/returnButton"
+            android:textColor="@color/textColor"
+            android:background="@color/colorPrimary"
+            android:text="Vrati me na pocetnu stranu"/>
+    </LinearLayout>
 </LinearLayout>

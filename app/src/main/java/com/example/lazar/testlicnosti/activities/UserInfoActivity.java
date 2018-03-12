@@ -21,6 +21,8 @@ import com.example.lazar.testlicnosti.SpinnerAdapter;
 
 public class UserInfoActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    private static final int TERMS_REQUEST_CODE = 0;
+
     TextView age, termsAndConditions;
     Spinner spinner;
     Button nextButton;
@@ -110,7 +112,7 @@ public class UserInfoActivity extends AppCompatActivity implements AdapterView.O
             public void onClick(View v) {
                 Intent intent = new Intent(UserInfoActivity.this,
                         TermsAndConditionsActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, TERMS_REQUEST_CODE);
             }
         });
         termsCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -144,5 +146,13 @@ public class UserInfoActivity extends AppCompatActivity implements AdapterView.O
             nextButton.setEnabled(true);
         } else nextButton.setEnabled(false);
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            termsCheckBox.setChecked(true);
+        }
     }
 }

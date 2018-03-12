@@ -11,14 +11,18 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/textColor"
-    android:padding="16dp"
     tools:context="com.example.lazar.testlicnosti.activities.QuestionActivity">
 
+    <include
+        android:id="@+id/topHeader"
+        layout="@layout/user_info_header"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_weight="3"
         android:background="#ffffff">
 
 
@@ -94,7 +98,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
@@ -115,8 +119,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="16dp">
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,7 +138,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/termsAndConditionsTextView"
             android:text="@string/terms_and_conditions"
-            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"/>
     </LinearLayout>
@@ -140,7 +147,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
+        android:padding="16dp"
+        android:layout_weight="2">
 
         <Button
             android:id="@+id/buttonNext"
