@@ -68,6 +68,7 @@
     <string name="pol_label">Pol</string>
     <string name="obrazovanje_label">Obrazovanje</string>
     <string name="terms_and_conditions">Uslove korišćenja</string>
+    <string name="terms_and_co_title">Uslovi korišćenja</string>
     <string name="prihvatam_label">prihvatam</string>
     <string-array name="education_array">
         <item>Izaberi</item>
