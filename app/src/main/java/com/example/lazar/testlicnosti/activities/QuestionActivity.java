@@ -7,11 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.TextSwitcher;
 import android.widget.TextView;
 
 import com.example.lazar.testlicnosti.DataProvider;
-import com.example.lazar.testlicnosti.PreferenceUtility;
 import com.example.lazar.testlicnosti.R;
 import com.example.lazar.testlicnosti.model.QuestionModel;
 import com.facebook.stetho.Stetho;
@@ -78,7 +76,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             setCounter(counter, questionNum);
             updateUI(questionNum);
         } else {
-            Intent intent = new Intent(this, TestActivity.class);
+            Intent intent = new Intent(this, AnswerActivity.class);
             startActivity(intent);
         }
     }

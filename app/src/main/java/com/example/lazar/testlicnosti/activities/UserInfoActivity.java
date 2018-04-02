@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.example.lazar.testlicnosti.Constants;
 import com.example.lazar.testlicnosti.PreferenceUtility;
 import com.example.lazar.testlicnosti.R;
-import com.example.lazar.testlicnosti.SpinnerAdapter;
+import com.example.lazar.testlicnosti.adapters.SpinnerAdapter;
 
 public class UserInfoActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -92,7 +92,6 @@ public class UserInfoActivity extends AppCompatActivity implements AdapterView.O
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
-
 
         });
 

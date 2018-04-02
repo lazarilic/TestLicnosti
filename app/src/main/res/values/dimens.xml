@@ -1,3 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_card_answer">190dp</dimen>
+    <dimen name="answer_elevation">4dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
 </resources>

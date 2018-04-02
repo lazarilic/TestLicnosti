@@ -1,26 +1,14 @@
 package com.example.lazar.testlicnosti.model;
 
-import java.util.Date;
-
 /**
  * Created by Lazar on 2/26/18.
  */
-
 public class User {
 
-    public String gender;
-    public String age;
-    public String education;
-    public String currentTime;
-
-    public User(String gender, String age) {
-        this.gender = gender;
-        this.age = age;
-    }
-
-    public User() {
-
-    }
+    private String gender;
+    private String age;
+    private String education;
+    private String currentTime;
 
     public String getGender() {
         return gender;
@@ -43,6 +31,7 @@ public class User {
     }
 
     public void setEducation(String education) {
+
         this.education = education;
     }
 
