@@ -21,6 +21,8 @@ import java.util.List;
 
 public class FirebaseAccess {
 
+    private static final String ANSWERS_NODE = "answers";
+    private static final String USER_INFO_NODE = "userInfo";
     private FirebaseDatabase database;
     private DatabaseReference reference;
     private DatabaseReference answers;
@@ -34,8 +36,8 @@ public class FirebaseAccess {
 
     public void sendResults() {
         reference = database.getReference().child(Constants.USERS).push();
-        answers = reference.child("answers");
-        userInfo = reference.child("userInfo");
+        answers = reference.child(ANSWERS_NODE);
+        userInfo = reference.child(USER_INFO_NODE);
 
         List<QuestionModel> questions = DataProvider.get(context).getAllQuestions();
         answers.setValue(questions);
@@ -47,6 +49,4 @@ public class FirebaseAccess {
         user.setCurrentTime(Utils.getCurrentTime());
         userInfo.setValue(user);
     }
-
-
 }

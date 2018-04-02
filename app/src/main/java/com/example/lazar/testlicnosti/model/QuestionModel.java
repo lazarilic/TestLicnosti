@@ -16,10 +16,6 @@ public class QuestionModel {
         return isAscending;
     }
 
-    public void setAscending(int ascending) {
-        isAscending = ascending;
-    }
-
     public int getId() {
         return id;
     }
@@ -60,14 +56,10 @@ public class QuestionModel {
     }
 
     public QuestionModel(int id, String text, String type, int isAscending) {
-
         this.id = id;
         this.text = text;
         this.isAscending = isAscending;
         this.type = type;
-    }
-
-    public QuestionModel() {
     }
 
     public QuestionModel(int points, String type) {

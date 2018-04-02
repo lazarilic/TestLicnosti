@@ -1,4 +1,4 @@
-package com.example.lazar.testlicnosti;
+package com.example.lazar.testlicnosti.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -71,6 +71,7 @@ public class SpinnerAdapter extends ArrayAdapter<String> {
         }
 
         label.setText(values[position]);
+        label.setBackgroundColor(Color.WHITE);
         label.setPadding(16, 16, 16, 16);
 
         return label;

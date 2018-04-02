@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.QuestionActivity"/>
-        <activity android:name=".activities.TestActivity" />
+        <activity android:name=".activities.AnswerActivity" />
         <activity android:name=".activities.TermsAndConditionsActivity"/>
 
         <meta-data

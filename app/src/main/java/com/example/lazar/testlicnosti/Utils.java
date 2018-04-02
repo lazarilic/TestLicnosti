@@ -46,17 +46,9 @@ public class Utils {
         return sum;
     }
 
-    public static String formatDouble(Double number) {
-        DecimalFormat df = new DecimalFormat("#.00");
-        return df.format(number);
-    }
-
     public static String getCurrentTime() {
         Locale locale = new Locale("sr");
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss", locale);
         return simpleDateFormat.format(Calendar.getInstance().getTime());
     }
-
-
-
 }

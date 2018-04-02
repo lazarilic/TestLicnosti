@@ -3,6 +3,8 @@ package com.example.lazar.testlicnosti;
 import android.content.Context;
 import android.util.Log;
 
+import com.example.lazar.testlicnosti.model.Answer;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -81,18 +83,16 @@ public class ScoringKey {
         return Utils.calculateAveragePointForType(grades);
     }
 
-    public Map<String, String> getAllAnswers(Context context) {
-        DisplayQuestion displayQuestion = new DisplayQuestion();
+    public List<Answer> getAllAnswers(Context context) {
+        DisplayQuestion displayQuestion = new DisplayQuestion(context);
         Map<String, Double> grades = getAverageGradesForAllTypes(context);
-        Map<String, String> answersForTypes = new HashMap<>();
+        List<Answer> answers = new ArrayList<>();
 
         for (Map.Entry<String, Double> grade: grades.entrySet()) {
-            String type = grade.getKey();
-            double points = grade.getValue();
-            String answer = displayQuestion.getFinalAnswer(context, type, points);
-            answersForTypes.put(type, answer);
+            String text = displayQuestion.getFinalAnswer(grade.getKey(), grade.getValue());
+            Answer answer = new Answer(grade.getKey(), text);
+            answers.add(answer);
         }
-        return answersForTypes;
+        return answers;
     }
-
 }

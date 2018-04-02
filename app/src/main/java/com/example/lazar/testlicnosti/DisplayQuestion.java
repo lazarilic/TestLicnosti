@@ -9,8 +9,13 @@ import static com.example.lazar.testlicnosti.Constants.*;
  */
 public class DisplayQuestion {
 
+    private Context context;
 
-    public String getFinalAnswer(Context context, String type, double points) {
+    public DisplayQuestion(Context context) {
+        this.context = context;
+    }
+
+    public String getFinalAnswer(String type, double points) {
         String gender = PreferenceUtility.getUserGender(context);
         if (gender.equals(Constants.GENDER_FEMALE)) {
             return getAnswerForFemale(context, type, points);
