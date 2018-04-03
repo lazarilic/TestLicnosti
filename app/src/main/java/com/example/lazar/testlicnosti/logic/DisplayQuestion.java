@@ -1,6 +1,10 @@
-package com.example.lazar.testlicnosti;
+package com.example.lazar.testlicnosti.logic;
 
 import android.content.Context;
+
+import com.example.lazar.testlicnosti.Constants;
+import com.example.lazar.testlicnosti.PreferenceUtility;
+import com.example.lazar.testlicnosti.R;
 
 import static com.example.lazar.testlicnosti.Constants.*;
 

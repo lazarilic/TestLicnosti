@@ -29,9 +29,11 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     private Button button5;
     private Context mContext;
 
-    QuestionModel mQuestionModel;
-
+    private static final String CURRENT_QUESTION = "current_question";
+    private static final int TOTAL_QUESTION_NUMBER = 60;
     private int questionNum = 1;
+
+    QuestionModel mQuestionModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,16 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         Stetho.initializeWithDefaults(this);
         initViews();
         setClickListeners();
+        if (savedInstanceState != null) {
+            questionNum = savedInstanceState.getInt(CURRENT_QUESTION);
+        }
         updateUI(questionNum);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(CURRENT_QUESTION, questionNum);
     }
 
     private void initViews() {
@@ -71,7 +82,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void getNewQuestion() {
-        if (questionNum < 60) {
+        if (questionNum < TOTAL_QUESTION_NUMBER) {
             questionNum++;
             setCounter(counter, questionNum);
             updateUI(questionNum);

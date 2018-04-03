@@ -11,8 +11,6 @@ import com.example.lazar.testlicnosti.model.User;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,7 +42,7 @@ public class FirebaseAccess {
 
         User user = new User();
         user.setGender(PreferenceUtility.getUserGender(context));
-        user.setAge(PreferenceUtility.getUsegeAge(context));
+        user.setAge(PreferenceUtility.getUserAge(context));
         user.setEducation(PreferenceUtility.getEducationLevel(context));
         user.setCurrentTime(Utils.getCurrentTime());
         userInfo.setValue(user);

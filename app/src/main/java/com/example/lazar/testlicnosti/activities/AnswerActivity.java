@@ -7,19 +7,14 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.TextView;
 
 import com.example.lazar.testlicnosti.R;
-import com.example.lazar.testlicnosti.ScoringKey;
+import com.example.lazar.testlicnosti.logic.ScoringKey;
 import com.example.lazar.testlicnosti.adapters.AnswersAdapter;
 import com.example.lazar.testlicnosti.database.FirebaseAccess;
 import com.example.lazar.testlicnosti.model.Answer;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import static com.example.lazar.testlicnosti.Constants.*;
 
 /**
  * Activity for displaying answers

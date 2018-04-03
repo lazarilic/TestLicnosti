@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class DataProvider {
 
-    private Context mContext;
+    private Context context;
     private static DataProvider instance;
 
     private DatabaseAccess mDatabaseAccess;
@@ -25,36 +25,28 @@ public class DataProvider {
     }
 
     private DataProvider(Context context) {
-        mContext = context;
-        mDatabaseAccess = DatabaseAccess.getInstance(mContext);
+        this.context = context;
+        mDatabaseAccess = DatabaseAccess.getInstance(this.context);
         mDatabaseAccess.open();
     }
 
     public QuestionModel getQuestion(int id) {
-        QuestionModel questionModel;
-        questionModel = mDatabaseAccess.getQuestion(id);
-        return questionModel;
+        return mDatabaseAccess.getQuestion(id);
     }
 
     public void setQuestion(QuestionModel question) {
         mDatabaseAccess.updateQuestion(question);
     }
 
-    List<QuestionModel> getSubTypePoints(String type) {
-        List<QuestionModel> questions;
-        questions = mDatabaseAccess.getSubTypesPoints(type);
-        return questions;
+    public List<QuestionModel> getSubTypePoints(String type) {
+        return  mDatabaseAccess.getSubTypesPoints(type);
     }
 
-    List<String> getTypes() {
-        List<String> types;
-        types = mDatabaseAccess.getAllSubTypeNames();
-        return types;
+    public List<String> getTypes() {
+        return mDatabaseAccess.getAllSubTypeNames();
     }
 
     public List<QuestionModel> getAllQuestions() {
-        List<QuestionModel> questions;
-        questions = mDatabaseAccess.getAllQuestions();
-        return questions;
+        return  mDatabaseAccess.getAllQuestions();
     }
 }

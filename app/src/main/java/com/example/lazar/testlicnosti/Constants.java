@@ -65,46 +65,46 @@ public class Constants {
         public static final String OPENNESS_TO_EXPERIENCE = "openness_to_experience";
     }
 
-    static final class StandardScoreMale {
+    public static final class StandardScoreMale {
 
-        static final double HONESTY_HUMILITY_LEFT = 3.23;
-        static final double HONESTY_HUMILITY_RIGHT = 4.33;
+        public static final double HONESTY_HUMILITY_LEFT = 3.23;
+        public static final double HONESTY_HUMILITY_RIGHT = 4.33;
 
-        static final double EMOTIONALITY_LEFT = 2.38;
-        static final double EMOTIONALITY_RIGHT = 3.36;
+        public static final double EMOTIONALITY_LEFT = 2.38;
+        public static final double EMOTIONALITY_RIGHT = 3.36;
 
-        static final double EXTRAVERSION_LEFT = 2.67;
-        static final double EXTRAVERSION_RIGHT = 3.85;
+        public static final double EXTRAVERSION_LEFT = 2.67;
+        public static final double EXTRAVERSION_RIGHT = 3.85;
 
-        static final double AGREEABLENESS_LEFT = 2.67;
-        static final double AGREEABLENESS_RIGHT = 3.79;
+        public static final double AGREEABLENESS_LEFT = 2.67;
+        public static final double AGREEABLENESS_RIGHT = 3.79;
 
-        static final double CONSCIENTIOUSNESS_LEFT = 3.21;
-        static final double CONSCIENTIOUSNESS_RIGHT = 4.25;
+        public static final double CONSCIENTIOUSNESS_LEFT = 3.21;
+        public static final double CONSCIENTIOUSNESS_RIGHT = 4.25;
 
-        static final double OPENNESS_TO_EXPERIENCE_LEFT = 2.98;
-        static final double OPENNESS_TO_EXPERIENCE_RIGHT = 4.26;
+        public static final double OPENNESS_TO_EXPERIENCE_LEFT = 2.98;
+        public static final double OPENNESS_TO_EXPERIENCE_RIGHT = 4.26;
     }
 
-    static final class StandardScoreFemale {
+    public static final class StandardScoreFemale {
 
-        static final double HONESTY_HUMILITY_LEFT = 3.48;
-        static final double HONESTY_HUMILITY_RIGHT = 4.48;
+        public static final double HONESTY_HUMILITY_LEFT = 3.48;
+        public static final double HONESTY_HUMILITY_RIGHT = 4.48;
 
-        static final double EMOTIONALITY_LEFT = 2.83;
-        static final double EMOTIONALITY_RIGHT = 3.91;
+        public static final double EMOTIONALITY_LEFT = 2.83;
+        public static final double EMOTIONALITY_RIGHT = 3.91;
 
-        static final double EXTRAVERSION_LEFT = 2.67;
-        static final double EXTRAVERSION_RIGHT = 3.97;
+        public static final double EXTRAVERSION_LEFT = 2.67;
+        public static final double EXTRAVERSION_RIGHT = 3.97;
 
-        static final double AGREEABLENESS_LEFT = 2.84;
-        static final double AGREEABLENESS_RIGHT = 3.92;
+        public static final double AGREEABLENESS_LEFT = 2.84;
+        public static final double AGREEABLENESS_RIGHT = 3.92;
 
-        static final double CONSCIENTIOUSNESS_LEFT = 3.22;
-        static final double CONSCIENTIOUSNESS_RIGHT = 4.24;
+        public static final double CONSCIENTIOUSNESS_LEFT = 3.22;
+        public static final double CONSCIENTIOUSNESS_RIGHT = 4.24;
 
-        static final double OPENNESS_TO_EXPERIENCE_LEFT = 2.94;
-        static final double OPENNESS_TO_EXPERIENCE_RIGHT = 4.24;
+        public static final double OPENNESS_TO_EXPERIENCE_LEFT = 2.94;
+        public static final double OPENNESS_TO_EXPERIENCE_RIGHT = 4.24;
     }
 
     public static ArrayList<String> getTypeNames() {
