@@ -1,12 +1,14 @@
-package com.example.lazar.testlicnosti;
+package com.example.lazar.testlicnosti.logic;
 
 import android.content.Context;
 import android.util.Log;
 
+import com.example.lazar.testlicnosti.Constants;
+import com.example.lazar.testlicnosti.DataProvider;
+import com.example.lazar.testlicnosti.Utils;
 import com.example.lazar.testlicnosti.model.Answer;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,8 +39,10 @@ public class ScoringKey {
     private Map<String, Double> getAverageGradesForAllTypes(Context context) {
         Map<String, Double> typeGrades = new HashMap<>();
         subTypeGrades = getAverageGradesForAllSubTypes(context);
+
         for (int i = 0; i < Constants.getTypeNames().size(); i++) {
-            typeGrades.put(Constants.getTypeNames().get(i), returnAverageForType(Constants.getTypeNames().get(i)));
+            typeGrades.put(Constants.getTypeNames().get(i),
+                    returnAverageForType(Constants.getTypeNames().get(i)));
             Log.d(TAG, Constants.getTypeNames().get(i) + " " + returnAverageForType(Constants.getTypeNames().get(i)));
         }
         Log.d(TAG, "-------------------------");

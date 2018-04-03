@@ -8,7 +8,6 @@ import android.util.Log;
 /**
  * Created by Lazar on 2/6/18.
  */
-
 public class PreferenceUtility {
 
     private static final String GENDER = "gender";
@@ -46,7 +45,7 @@ public class PreferenceUtility {
                 .getString(GENDER, DEFAULT_GENDER);
     }
 
-    public static String getUsegeAge(Context context) {
+    public static String getUserAge(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
                 .getString(AGE, "");
     }

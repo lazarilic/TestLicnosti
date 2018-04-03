@@ -6,7 +6,7 @@
     android:layout_marginRight="20dp"
     android:layout_marginTop="20dp"
     android:background="@color/colorPrimary"
-    android:elevation="@dimen/answer_elevation"
+    android:elevation="@dimen/default_elevation"
     android:orientation="vertical"
     android:padding="16dp">
 

@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
+    android:weightSum="3"
     tools:context="com.example.lazar.testlicnosti.activities.QuestionActivity">
-
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="180dp"
         android:padding="8dp"
         android:background="@color/colorPrimary"
-        android:elevation="4dp">
+        android:elevation="@dimen/default_elevation">
 
         <TextView
             android:id="@+id/counter"
@@ -39,25 +39,27 @@
             android:textColor="@color/textColor"
             android:textSize="23sp"
             android:animateLayoutChanges="true"/>
-
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
         android:background="#ffffff"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:layout_weight="2"
+        android:weightSum="5">
 
         <Button
             android:id="@+id/button5"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="0dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/cambo"
             android:text="@string/potpuno_se_slazem"
             android:textColor="@color/black"
             android:textSize="18sp"
+            android:layout_weight="1"
             android:background="?attr/selectableItemBackground"/>
         <View
             android:layout_width="match_parent"
@@ -65,13 +67,14 @@
             android:background="@color/colorDivider"/>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="0dp"
             android:text="@string/slazem_se"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:fontFamily="@font/cambo"
             android:id="@+id/button4"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:background="?attr/selectableItemBackground"/>
         <View
             android:layout_width="match_parent"
@@ -80,13 +83,14 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="0dp"
             android:text="@string/nisam_siguran"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:id="@+id/button3"
             android:fontFamily="@font/cambo"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:background="?attr/selectableItemBackground"/>
 
         <View
@@ -96,13 +100,14 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="0dp"
             android:text="@string/ne_slazem_se"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:id="@+id/button2"
             android:fontFamily="@font/cambo"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:background="?attr/selectableItemBackground"/>
 
         <View
@@ -112,13 +117,14 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="0dp"
             android:text="@string/potpuno_se_ne_slazem"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:fontFamily="@font/cambo"
             android:id="@+id/button1"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:background="?attr/selectableItemBackground"/>
     </LinearLayout>
 
